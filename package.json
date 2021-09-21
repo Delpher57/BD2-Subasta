@@ -1,0 +1,28 @@
+{
+  "name": "BD2-Subasta",
+  "version": "1.0.0",
+  "description": "Caso 3 Bases datos 2, sistemas de subastas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Delpher57/BD2-Subasta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Delpher57/BD2-Subasta/issues"
+  },
+  "homepage": "https://github.com/Delpher57/BD2-Subasta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+
+  "scripts": {
+		"start": "node index.js"
+	}
+}
