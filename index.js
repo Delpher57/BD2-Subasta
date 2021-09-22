@@ -1,5 +1,6 @@
 const express = require("express")
-const mongoose = require("mongoose") // new
+const mongoose = require("mongoose")
+const routes = require("./routes") 
 
 // Connect to MongoDB database
 // para hacer funcionar creamos la wea en docker:
@@ -8,6 +9,8 @@ mongoose
 	.connect("mongodb://localhost:27017/subasta", { useNewUrlParser: true })
 	.then(() => {
 		const app = express()
+        app.use(express.json())
+        app.use("/api/", routes) // new
 
 		app.listen(5000, () => {
 			console.log("Se inicio el servidor! :D")
