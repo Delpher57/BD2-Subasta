@@ -10,6 +10,7 @@ const schema = mongoose.Schema({
     initial_price : Number,
     max_date : Date,
     current_max_price : Number,
+    photo: String,
 })
 
 module.exports = mongoose.model("articulo", schema)
