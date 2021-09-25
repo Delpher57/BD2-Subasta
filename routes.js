@@ -12,6 +12,12 @@ router.get("/articulos", async (req, res) => {
     res.send(items)
 })
 
+
+function get_all() {
+    const items = articulo.find() // await, espera hasta que se termine esta operacion para continuar
+    return items
+}
+
 module.exports = router
 
 
